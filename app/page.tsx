@@ -29,12 +29,12 @@ export default function Home() {
 
   return (
     <>
-    <Header />
+      <Header />
       <section className="bg-white dark:bg-gray-900">
         <div className="container flex flex-col px-6 py-4 mx-auto space-y-6 h-max">
-          <h1 className="pt-6 w-48 h-2 mx-auto text-3xl font-semibold text-gray-800 dark:text-white lg:text-2xl mb-2.5 pb-5">
+          {/* <h1 className="pt-6 w-48 h-2 mx-auto text-3xl font-semibold text-gray-800 dark:text-white lg:text-2xl mb-2.5 pb-5">
             Live
-          </h1>
+          </h1> */}
           <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 sm:grid-cols-2 xl:grid-cols-5 lg:grid-cols-4 ">
             {tracks.map((track) => (
               <div className="w-full" key={track.id}>
