@@ -60,9 +60,9 @@ export default function TrackPage() {
         </div> */}
           <section className="bg-white dark:bg-gray-900">
             <div className="container flex flex-col items-center px-4 py-12 mx-auto xl:flex-row">
-              <div className="flex justify-center xl:w-1/2 pt-40">
+              <div className="flex justify-center xl:w-1/2 sm:pt-20 xl:pt-40 md:pt-10">
                 <img
-                  className="h-80 w-80 sm:w-[28rem] sm:h-[28rem] flex-shrink-0 object-cover rounded-full"
+                  className="h-60 w-60 sm:w-[28rem] sm:h-[28rem] flex-shrink-0 object-cover rounded-full"
                   src={track.cover}
                   alt={track.name}
                 />
