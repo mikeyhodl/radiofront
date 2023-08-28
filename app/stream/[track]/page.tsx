@@ -20,7 +20,7 @@ interface Track {
 export default function TrackPage() {
   const searchParams = useSearchParams();
   const id = searchParams.get("id"); // Get the 'id' from the query string
-  console.log("The Id is", id);
+  // console.log("The Id is", id);
 
   const [track, setTrack] = useState<Track | null>(null); // Specify the type as Track or null
 
