@@ -22,7 +22,7 @@ export default function Header() {
               <Link href="/">
                 <img
                   className="w-auto h-6 sm:h-7"
-                  src="https://www.max.com/img/max-h-w-l.svg"
+                  src="https://res.cloudinary.com/weknow-creators/image/upload/v1693223056/logo-arrena_rfimdk.png"
                   alt=""
                 />
               </Link>
