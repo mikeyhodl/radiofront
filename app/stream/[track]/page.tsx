@@ -26,7 +26,7 @@ export default function TrackPage() {
 
   useEffect(() => {
     const fetchTrack = async () => {
-      const response = await axios.get(`http://localhost:3000/tracks/${id}`);
+      const response = await axios.get(`https://musing-shamir.13-40-170-15.plesk.page/tracks/${id}`);
       setTrack(response.data);
     };
 
