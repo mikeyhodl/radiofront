@@ -18,7 +18,7 @@ export default function Home() {
   const [tracks, setTracks] = useState<Track[]>([]);
 
   useEffect(() => {
-    axios.get("https://musing-shamir.13-40-170-15.plesk.page/tracks").then((response) => {
+    axios.get("https://backend.radiofront.hackhub.cc/tracks").then((response) => {
       setTracks(response.data);
     });
   }, []);
