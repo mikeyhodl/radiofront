@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Reloader from "@/app/components/reloader";
 import Link from "next/link";
-// import Header from "@/app/components/header";
+import Header from "@/app/components/header";
 
 interface Track {
   id: string;
