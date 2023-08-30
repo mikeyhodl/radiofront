@@ -2,10 +2,10 @@
 
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useSearchParams } from "next/navigation";
+import { useParams } from "next/navigation";
 import Reloader from "@/app/components/reloader";
 import Link from "next/link";
-import Header from "@/app/components/header";
+// import Header from "@/app/components/header";
 
 interface Track {
   id: string;
@@ -18,11 +18,12 @@ interface Track {
 }
 
 export default function TrackPage() {
-  const searchParams = useSearchParams();
-  const id = searchParams.get("id"); // Get the 'id' from the query string
-  // console.log("The Id is", id);
+  const params = useParams();
+  // const id = params.get("id") as string;
+  // console.log(params.track);
+  const id = params.track;
 
-  const [track, setTrack] = useState<Track | null>(null); // Specify the type as Track or null
+  const [track, setTrack] = useState<Track | null>(null);
 
   useEffect(() => {
     const fetchTrack = async () => {
