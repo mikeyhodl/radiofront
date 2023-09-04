@@ -14,6 +14,7 @@ interface Track {
   source: string;
   url: string;
   artist: string;
+  genre: string;
   // Add other properties as needed
 }
 
@@ -42,7 +43,7 @@ export default function TrackPage() {
     <>
       <Header />
       <section className="bg-white dark:bg-gray-900">
-        <div className="container flex flex-col px-6 py-4 mx-auto space-y-6 h-screen">
+        <div className="container flex flex-col px-6 py-4 mx-auto space-y-6 h-max">
           {/* <div className="grid xl:mt-12 xl:grid-cols-4">
           <div className="w-full">
             <img
@@ -63,7 +64,7 @@ export default function TrackPage() {
             <div className="container flex flex-col items-center px-4 py-12 mx-auto xl:flex-row">
               <div className="flex justify-center xl:w-1/2 sm:pt-20 xl:pt-40 md:pt-10">
                 <img
-                  className="h-60 w-60 sm:w-[28rem] sm:h-[28rem] flex-shrink-0 object-cover rounded-full"
+                  className="h-60 w-60 sm:w-[28rem] sm:h-[28rem] flex-shrink-0 object-cover rounded-md"
                   src={track.cover}
                   alt={track.name}
                 />
@@ -72,10 +73,22 @@ export default function TrackPage() {
                 <h2 className="text-2xl font-semibold tracking-tight text-gray-800 xl:text-3xl dark:text-white pb-2.5">
                   {track.name}
                 </h2>
-                <h2 className="text-1xl font-bold tracking-tight text-gray-800 xl:text-1xl dark:text-white pb-10">
-                  {track.artist}
+                <h2 className="text-1xl font-bold tracking-tight text-gray-800 xl:text-1xl dark:text-white pb-4">
+                  Aritist : {track.artist}
                 </h2>
-                <audio controls autoPlay>
+                <h2 className="text-1xl font-bold tracking-tight text-gray-800 xl:text-1xl dark:text-white pb-8">
+                  Genre : {track.genre}
+                </h2>
+                {/* <audio controls autoPlay>
+                  <source src={track.source} />
+                </audio> */}
+                <audio
+                  controls
+                  autoPlay
+                  ref={audioRef}
+                  className="custom-audio-player"
+                  preload="metadata"
+                >
                   <source src={track.source} />
                 </audio>
                 <div className="mt-6 sm:-mx-2">

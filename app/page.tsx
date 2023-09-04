@@ -35,7 +35,7 @@ export default function Home() {
           {/* <h1 className="pt-6 w-48 h-2 mx-auto text-3xl font-semibold text-gray-800 dark:text-white lg:text-2xl mb-2.5 pb-5">
             Live
           </h1> */}
-          <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 sm:grid-cols-2 xl:grid-cols-5 lg:grid-cols-4 ">
+          <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 2xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
             {tracks.map((track) => (
               <div className="w-full" key={track.id}>
                 <Link href={`/stream/${track.id}`}>
