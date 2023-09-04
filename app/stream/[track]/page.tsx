@@ -6,6 +6,8 @@ import { useParams } from "next/navigation";
 import Reloader from "@/app/components/reloader";
 import Link from "next/link";
 import Header from "@/app/components/header";
+import Hls from "hls.js";
+import { useRef } from "react";
 
 interface Track {
   id: string;
