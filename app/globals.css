@@ -4,11 +4,45 @@
 
 /* Style the scrollbar track */
 ::-webkit-scrollbar {
-    width: 0px; /* Set the width of the scrollbar */
-  }
-  
-  /* Style the scrollbar thumb (the draggable part) */
-  ::-webkit-scrollbar-thumb {
-    background: #033135; /* Color of the thumb */
-    border-radius: 1px; /* Round the corners of the thumb */
-  }
+  width: 0px; /* Set the width of the scrollbar */
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #033135; /* Color of the thumb */
+  border-radius: 1px; /* Round the corners of the thumb */
+}
+
+/* Custom audio player styles */
+.custom-audio-player {
+  width: 100%;
+  background-color: #2563EB;
+  border: 1px solid #2563EB;
+  border-radius: 20px;
+  padding: 10px;
+  outline: none;
+}
+
+/* Style the controls (buttons) */
+.custom-audio-player::-webkit-media-controls {
+  background-color: transparent;
+  color: #333;
+}
+
+/* Style other audio player elements as needed */
+.custom-audio-player::-webkit-media-controls-play-button {
+  font-size: 16px;
+}
+
+/* Style the progress bar */
+.custom-audio-player::-webkit-media-controls-progress-bar {
+  background-color: #ffffff;
+}
+
+/* Style the volume control */
+.custom-audio-player::-webkit-media-controls-volume-slider {
+  width: 50px;
+  background-color: #ffffff;
+}
+
+/* Customize other audio player elements as needed */
