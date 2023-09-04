@@ -11,7 +11,7 @@ interface Track {
   id: number;
   name: string;
   cover: string;
-  artist: string;
+  genre: string;
   // Add other properties as needed
 }
 
@@ -48,7 +48,7 @@ export default function Home() {
                   <h1 className="text-2xl font-semibold text-gray-800 dark:text-white lg:text-1xl mb-2.5">
                     {track.name}
                   </h1>
-                  <p className="text-2xl dark:text-white ">{track.artist}</p>
+                  <p className="text-2xl dark:text-white ">{track.genre}</p>
                   {/* </div> */}
                 </Link>
               </div>
