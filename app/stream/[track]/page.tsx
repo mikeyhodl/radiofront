@@ -19,6 +19,8 @@ interface Track {
 }
 
 export default function TrackPage() {
+  const audioRef = useRef<HTMLAudioElement | null>(null); // Declare audioRef
+
   const params = useParams();
   // const id = params.get("id") as string;
   // console.log(params.track);
@@ -30,6 +32,19 @@ export default function TrackPage() {
     const fetchTrack = async () => {
       const response = await axios.get(`https://backend.radiofront.hackhub.cc/tracks/${id}`);
       setTrack(response.data);
+      // Check if the track is an HLS audio stream (ends with .m3u8)
+      if (response.data.source.endsWith(".m3u8")) {
+        // Initialize hls.js
+        const hls = new Hls();
+        hls.loadSource(response.data.source);
+
+        if (audioRef.current) {
+          hls.attachMedia(audioRef.current as HTMLMediaElement); // Use type assertion
+          hls.on(Hls.Events.MANIFEST_PARSED, () => {
+            audioRef.current!.play(); // Play the audio
+          });
+        }
+      }
     };
 
     fetchTrack();
