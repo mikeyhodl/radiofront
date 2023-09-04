@@ -77,9 +77,9 @@ export default function TrackPage() {
             </audio>
           </div>
         </div> */}
-          <section className="bg-white dark:bg-gray-900">
+          <section className="bg-white dark:bg-gray-900 xl:h-screen lg:h-screen">
             <div className="container flex flex-col items-center px-4 py-12 mx-auto xl:flex-row">
-              <div className="flex justify-center xl:w-1/3 sm:pt-20 xl:pt-30 md:pt-10">
+              <div className="flex justify-center xl:w-1/3 sm:pt-20 xl:pt-32 md:pt-10">
                 {/* sm:w-[28rem] sm:h-[28rem] image class*/}
                 <img
                   className="h-60 w-60 flex-shrink-0 object-cover rounded-md"
