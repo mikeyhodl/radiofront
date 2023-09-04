@@ -48,7 +48,7 @@ export default function Home() {
                   <h1 className="text-2xl font-semibold text-gray-800 dark:text-white lg:text-1xl mb-2.5">
                     {track.name}
                   </h1>
-                  <p className="text-2xl dark:text-white ">{track.genre}</p>
+                  <p className="text-1xl dark:text-white font-bold">{track.genre}</p>
                   {/* </div> */}
                 </Link>
               </div>
