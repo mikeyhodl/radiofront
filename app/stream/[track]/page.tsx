@@ -59,7 +59,7 @@ export default function TrackPage() {
   return (
     <>
       <Header />
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-white dark:bg-gray-900 bg-gradient-to-r from-violet-500 to-fuchsia">
         <div className="container flex flex-col px-6 py-4 mx-auto space-y-6 h-max">
           {/* <div className="grid xl:mt-12 xl:grid-cols-4">
           <div className="w-full">
@@ -77,7 +77,7 @@ export default function TrackPage() {
             </audio>
           </div>
         </div> */}
-          <section className="bg-white dark:bg-gray-900 xl:h-screen lg:h-screen">
+          <section className="bg-white dark:bg-gray-900 xl:h-screen lg:h-screen bg-gradient-to-r from-violet-500 to-fuchsia">
             <div className="container flex flex-col items-center px-4 py-12 mx-auto xl:flex-row">
               <div className="flex justify-center xl:w-1/3 sm:pt-20 xl:pt-32 md:pt-10">
                 {/* sm:w-[28rem] sm:h-[28rem] image class*/}
@@ -113,7 +113,7 @@ export default function TrackPage() {
                   <a
                     href={track.url}
                     target="_blank"
-                    className="inline-flex items-center justify-center w-full px-4 text-sm py-2.5 overflow-hidden text-blue-500 border border-blue-500 rounded-lg md:mt-0 md:w-auto md:mx-2 dark:border-blue-400 dark:text-blue-400 focus:outline-none"
+                    className="inline-flex items-center justify-center w-full px-4 text-sm py-2.5 overflow-hidden text-blue-500 border border-blue-500 rounded-lg md:mt-0 md:w-auto md:mx-2 dark:border-blue-400 dark:text-blue-400 focus:outline-none hover:bg-blue-600 hover:text-white"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
